@@ -1,0 +1,24 @@
+{
+  "common": {
+    "appName": "Verdexa",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "loading": "Loading...",
+    "save": "Save"
+  },
+  "language": {
+    "title": "Choose Your Language",
+    "subtitle": "Select your preferred language"
+  },
+  "auth": {
+    "welcome": "Welcome to Verdexa",
+    "login": "Login",
+    "register": "Register",
+    "phoneNumber": "Phone Number",
+    "otp": "OTP Verification",
+    "verify": "Verify"
+  }
+}

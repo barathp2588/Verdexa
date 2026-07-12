@@ -1,0 +1,24 @@
+{
+  "common": {
+    "appName": "Verdexa",
+    "continue": "जारी रखें",
+    "cancel": "रद्द करें",
+    "back": "वापस",
+    "next": "अगला",
+    "done": "पूर्ण",
+    "loading": "लोड हो रहा है...",
+    "save": "सहेजें"
+  },
+  "language": {
+    "title": "अपनी भाषा चुनें",
+    "subtitle": "अपनी पसंदीदा भाषा चुनें"
+  },
+  "auth": {
+    "welcome": "Verdexa में आपका स्वागत है",
+    "login": "लॉगिन",
+    "register": "पंजीकरण",
+    "phoneNumber": "फ़ोन नंबर",
+    "otp": "OTP सत्यापन",
+    "verify": "सत्यापित करें"
+  }
+}
