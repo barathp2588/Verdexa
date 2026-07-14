@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Image, Text, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 
@@ -7,7 +7,7 @@ export default function SplashScreen() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.replace("/(auth)/language");
-    }, 2000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -16,10 +16,18 @@ export default function SplashScreen() {
     <View style={styles.container}>
       <StatusBar style="light" />
 
-      <Text style={styles.logo}>VERDEXA</Text>
+      <Image
+        source={require("../assets/images/logo.png")}
+        style={styles.logo}
+        resizeMode="contain"
+      />
 
       <Text style={styles.tagline}>
-        Don't just buy vegetables. Follow the farmer who grows them 
+        Don't just buy vegetables.
+      </Text>
+
+      <Text style={styles.tagline}>
+        Follow the farmer who grows them.
       </Text>
     </View>
   );
@@ -28,21 +36,24 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#2E7D32",
+    backgroundColor: "#0f7528",
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 25,
   },
 
   logo: {
-    color: "#FFFFFF",
-    fontSize: 42,
-    fontWeight: "700",
-    letterSpacing: 3,
+    width: 260,
+    height: 260,
+    marginBottom: 25,
   },
 
   tagline: {
-    color: "#FFFFFF",
-    marginTop: 12,
-    fontSize: 16,
+    color: "#6b7b6b",
+    fontSize: 24,
+    fontWeight: "600",
+    textAlign: "center",
+    lineHeight: 28,
+    letterSpacing: 0.5,
   },
 });
